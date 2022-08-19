@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="POST">
+    <div>
+        <label>Digite a frase à ser enviada</label>
+        <br />
+        <input type="text" name="frase" value="@Model.fraseInfo.frase"/>
+        <button type="submit">Enviar</button>
+        <br/>
+        <label>@Model.statusMessage</label>
+    </div>
+</form>
+
